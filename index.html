@@ -140,6 +140,23 @@
         <p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="tel">тел. +7 (812) 275-75-75</p>
         <a href="#" class="btn feedback-btn">Напшите нам</a>
+        <form action="#" class="feedback-form" method="POST">
+          <button class="close-form">Закрыть</button>
+          <div class="form-field">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="ПРЕДСТАВТЕСЬ ПОЖАЛУЙСТА">
+          </div>
+
+          <div class="form-field">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+          </div>
+
+          <label for="letter">Текст письма</label>
+          <textarea name="letter" id="letter" cols="20" rows="10">В СВОБОДНОЙ ФОРМЕ</textarea>
+
+          <input type="submit" value="ОТПРАВИТЬ">
+        </form>
       </div>
     </div>
   </section>
