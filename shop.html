@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500,300,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+  <header class="main-header">
+    <div class="container">
+      <div class="navigation-block clearfix">
+        <div class="main-logo">
+          <img src="img/logo.png" alt="Нёрдс" class="logo" width="139" height="56">
+        </div>
+
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item"><a href="index.html">Студия</a></li>
+            <li class="main-navigation-item"><a href="#">Клиенты</a></li>
+            <li class="main-navigation-item"><a href="#">Магазин</a></li>
+            <li class="main-navigation-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="basket">
+          <a href="#" class="basket-link">Корзина</a>
+        </div>
+      </div>
+
+      <p class="header-title">Добро пожаловать в магазин готовых макетов</p>
+    </div>
+  </header>
+
+
+  <main class="container clearfix">
+    <div class="filter">
+      <div class="price">
+        <h2 class="price-title">Стоимость:</h2>
+
+      </div>
+
+      <h2 class="radio-title">Сетка:</h2>
+      <input type="radio" name="grid" id="adaptive" value="adaptive">
+      <label for="adaptive">Адаптивная</label>
+      <input type="radio" name="grid" id="fix" value="fix">
+      <label for="fix">Фиксированная</label>
+      <input type="radio" name="grid" id="rubber" value="rubber">
+      <label for="rubber">Резиновая</label>
+
+      <h2 class="checkbox-title">Особенности:</h2>
+      <input type="checkbox" name="slider" id="slider">
+      <label for="slider">Слайдер</label>
+      <input type="checkbox" name="features" id="features">
+      <label for="features">Блок преимуществ</label>
+      <input type="checkbox" name="news" id="news">
+      <label for="news">Новости</label>
+      <input type="checkbox" name="gallery" id="gallery">
+      <label for="gallery">Галерея</label>
+      <input type="checkbox" name="basket" id="basket">
+      <label for="basket">Корзина</label>
+
+      <button class="btn filter-btn" type="submit"></button>
+    </div>
+
+    <div class="content">
+      <div class="sort">
+        <p class="sort-name">Сортировать:</p>
+        <ul class="sort-list">
+          <li class="sort-item">
+            <a href="#" class="sort-link">По цене</a>
+          </li>
+          <li class="sort-item">
+            <a href="#" class="sort-link">По типу</a>
+          </li>
+          <li class="sort-item">
+            <a href="#" class="sort-link">По функционалу</a>
+          </li>
+        </ul>
+      </div>
+
+      
+    </div>
+
+
+  </main>
+
+  <section class="map">
+    <div class="container feedback-block">
+      <div class="feedback">
+        <h2 class="title">NЁRDS DESIGN STUDIO</h2>
+        <p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="tel">тел. +7 (812) 275-75-75</p>
+        <a href="#" class="btn feedback-btn">Напшите нам</a>
+        <form action="#" class="feedback-form" method="POST">
+          <button class="close-form">Закрыть</button>
+          <div class="form-field">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="ПРЕДСТАВТЕСЬ ПОЖАЛУЙСТА">
+          </div>
+
+          <div class="form-field">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+          </div>
+
+          <label for="letter">Текст письма</label>
+          <textarea name="letter" id="letter" cols="20" rows="10">В СВОБОДНОЙ ФОРМЕ</textarea>
+
+          <input type="submit" value="ОТПРАВИТЬ">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="main-footer clearfix container">
+    <div class="social">
+      <a href="#" class="social-ico social-vk">Вконтакте</a>
+      <a href="#" class="social-ico social-fb">Фейсбук</a>
+      <a href="#" class="social-ico social-i">Инстаграмм</a>
+    </div>
+    <div class="footer-slogan">
+      <p class="footer-slogan-main">Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+</body>
+</html>
