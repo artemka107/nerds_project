@@ -525,6 +525,7 @@ label[for*="slider-"] {
   width: 230px;
   margin-right: 90px;
   opacity: 0.2;
+  transition: opacity 0.3s ease;
 }
 
 .partners-link:hover {
@@ -592,6 +593,7 @@ main.container {
 .feedback-form {
   position: fixed;
   z-index: 2;
+  opacity: 0;
   top: 30%;
   left: 30%;
   width: 470px;
@@ -828,4 +830,15 @@ textarea[name="letter"]:focus {
 
 .inner-page .main-header {
   margin-bottom: 75px;
+}
+
+.filter {
+  float: left;
+  width: 240px;
+  margin-right: 60px;
+}
+
+.content {
+  float: right;
+  width: 580px;
 }
