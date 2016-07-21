@@ -36,21 +36,21 @@
 
   <main class="container clearfix">
     <div class="filter">
-      <div class="price">
-        <h2 class="price-title">Стоимость:</h2>
+      <div class="range">
+        <h2 class="range-title">Стоимость:</h2>
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
-              <div class="bar"></div>
+              <div class="bar" style="width:70%; margin-left:20px"></div>
             </div>
             <div class="min-toggle toggle"></div>
             <div class="max-toggle toggle"></div>
           </div>
           <div class="price-controls">
-            <label for="min-price">ОТ
+            <label class="min-price" for="min-price">ОТ
               <input name="min-price" type="text" id="min-price" value="0">
             </label>
-            <label for="max-price">ДО
+            <label class="max-price" for="max-price">ДО
               <input name="max-price" type="text" id="max-price" value="15000">
             </label>
           </div>
@@ -67,17 +67,27 @@
 
       <h2 class="checkbox-title">Особенности:</h2>
       <input type="checkbox" name="slider" id="slider">
-      <label for="slider">Слайдер</label>
+      <label for="slider">
+        <span class="indicator"></span>Слайдер
+      </label>
       <input type="checkbox" name="features" id="features">
-      <label for="features">Блок преимуществ</label>
+      <label for="features">
+        <span class="indicator"></span>Блок преимуществ
+      </label>
       <input type="checkbox" name="news" id="news">
-      <label for="news">Новости</label>
+      <label for="news">
+        <span class="indicator"></span>Новости
+      </label>
       <input type="checkbox" name="gallery" id="gallery">
-      <label for="gallery">Галерея</label>
+      <label for="gallery">
+        <span class="indicator"></span>Галерея
+      </label>
       <input type="checkbox" name="basket" id="basket">
-      <label for="basket">Корзина</label>
+      <label for="basket">
+        <span class="indicator"></span>Корзина
+      </label>
 
-      <button class="btn filter-btn" type="submit"></button>
+      <button class="btn filter-btn" type="submit">показать</button>
     </div>
 
     <div class="content">
