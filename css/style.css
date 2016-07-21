@@ -940,7 +940,19 @@ textarea[name="letter"]:focus {
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
+  cursor: pointer;
+  color: #283136;
+}
 
+.filter input[type="radio"]:enabled+label:hover,
+.filter input[type="checkbox"]:enabled+label:hover {
+  color: #000;
+}
+
+.filter input[type="radio"]:disabled+label,
+.filter input[type="checkbox"]:disabled+label {
+  cursor: context-menu;
+  opacity: 0.3;
 }
 
 .filter input[type="radio"]+label:before {
@@ -996,6 +1008,23 @@ textarea[name="letter"]:focus {
   height: 12px;
   transform: rotate(-45deg);
   background: #c1c1c1;
+}
+
+.filter input[type="radio"]:enabled+label:hover:before {
+  border-color: #b5b5b5;
+}
+
+.filter input[type="radio"]:enabled+label:hover:after {
+  background: #b5b5b5;
+}
+
+input[type="checkbox"]:enabled+label:hover:before {
+   border-color: #b5b5b5;
+}
+
+input[type="checkbox"]:enabled+label:hover .indicator:before,
+input[type="checkbox"]:enabled+label:hover .indicator:after {
+  background: #b5b5b5;
 }
 
 .filter-btn {
