@@ -599,7 +599,7 @@ main.container {
 
 .feedback-form {
   position: fixed;
-  z-index: 2;
+  z-index: -1;
   opacity: 0;
   top: 30%;
   left: 30%;
@@ -1059,4 +1059,110 @@ input[type="checkbox"]:enabled+label:hover .indicator:after {
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
+}
+
+.filter .range-title {
+  margin-top: 0;
+}
+
+.sort {
+  position: relative;
+}
+
+.sort-name {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-list {
+  width: 450px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.sort-item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-link {
+  vertical-align: top;
+  margin-left: 40px;
+  border-bottom: 1px dotted  #00ca74;
+  text-transform: uppercase;
+  color: #b2b2b2;
+}
+
+.sort-link:hover {
+  border-bottom: 1px solid #00ca74;
+  color: #000;
+}
+
+.sort-link:active {
+  border: none;
+  color: #000;
+}
+
+.sort-link-active {
+  border: none;
+  color: #000;
+  cursor: context-menu;
+}
+
+.sort-link-active:hover {
+  border: none;
+}
+
+.sort-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sort-min,
+.sort-max {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+  border: 10px solid  #c1c1c1;
+  border-width: 14px 6px 14px 6px;
+  line-height: 0;
+}
+
+.sort-min {
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-bottom-width: 0;
+}
+
+.sort-max {
+  border-color: transparent transparent #c1c1c1 transparent;
+  border-top-width: 0;
+}
+
+.sort-min:active {
+  border-top-color: #000;
+}
+
+.sort-max:active {
+  border-bottom-color: #000;
+}
+
+.sort-min-active {
+  border-top-color: #00ca74;
+}
+
+.sort-max-active {
+  border-bottom-color: #00ca74;
 }
