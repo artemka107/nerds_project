@@ -213,6 +213,21 @@ input {
   text-transform: uppercase;
 }
 
+.main-navigation-item a {
+  position: relative;
+}
+
+.main-navigation-item .active:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #fb565a;
+  border-radius: 2px;
+}
+
 .main-navigation-item a:hover,
 .basket-link:hover {
   color: #fb565a;
