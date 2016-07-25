@@ -1161,7 +1161,7 @@ input[type="checkbox"]:enabled+label:hover .indicator:after {
   display: inline-block;
   vertical-align: middle;
   border: 10px solid  #c1c1c1;
-  border-width: 14px 6px 14px 6px;
+  border-width: 10px 5px;
   line-height: 0;
 }
 
